@@ -7,7 +7,8 @@ import FooterVue from './components/FooterComponents/Footer.vue';
 </script>
 
 <template>
-	<nav style="z-index: 1;" >
+
+	<nav >
 		<a href="#home">HOME</a>
 		<a  href="#about">ABOUT</a>
 		<a  href="#projects">PROJECTS</a>
@@ -35,7 +36,7 @@ html,body {
 	overflow-x: hidden;
 }
 body {
-	width: 97.5vw;
+	width: 100vw;
 	min-height: 100vh;
 	margin: 0 auto;
 	line-height: 1.6;
@@ -55,6 +56,7 @@ nav {
 	justify-content: flex-start;
 	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 1;
 	background: linear-gradient(white, rgb(0,0,0,0));
 	backdrop-filter: blur(1PX);
@@ -66,7 +68,7 @@ nav a {
 	display: inline-block;
 	margin-left: 1.5rem;
 	font-weight: 500;
-	font-size: inherit;
+	font-size: 1rem;
 }
 
 a:hover, a:focus, a:active {
