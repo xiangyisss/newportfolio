@@ -6,7 +6,7 @@
         <br>
         and <span class="animation"> {{item}} </span>.</p>
         <div class="img-wrapper">
-            <img src="../../../public/lotus.png" class="img-fluid" alt="" >
+            <img src="../../assets/lotus.png" class="img-fluid" alt="" >
         </div>
     </div>
 </template>
@@ -34,7 +34,7 @@ import type { Ref } from 'vue'
 
 <style scoped>
 .container-fluid {
-    background-image: url('../../../public/watercolor-bg.jpg');
+    background-image: url('../../assets/watercolor-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

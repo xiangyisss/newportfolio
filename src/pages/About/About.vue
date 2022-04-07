@@ -3,7 +3,7 @@
         <h1 class="mt-4 mb-5" > <span>About</span> Me</h1>
         <div class="wrapper d-flex justify-content-between align-items-center flex-wrap">
             <div class="img-wrapper">
-                <img src="../../../public/my-photo.png" alt="">
+                <img src="../../assets/my-photo.png" alt="">
             </div>
 
             <div class="info-wrapper">

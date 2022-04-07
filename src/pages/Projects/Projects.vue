@@ -4,7 +4,7 @@
         <div class="project-wrapper d-flex flex-wrap justify-content-between align-items-stretch">
 
             <div class="project">
-                <img class="img-fluid" src="../../../public/reading-tree.PNG" alt="">
+                <img class="img-fluid" src="../../assets/reading-tree.PNG" alt="">
                 <h4>Love reading</h4>
                 <div class=" description-box">
 
@@ -17,7 +17,7 @@
             </div>
 
             <div class="project">
-                <img class="img-fluid"  src="../../../public/recipes-site.PNG" alt="">
+                <img class="img-fluid"  src="../../assets/recipes-site.PNG" alt="">
                 <h4>Today's Recipes</h4>
                 <div class="description-box">
 
@@ -31,7 +31,7 @@
             </div>
 
             <div class="project">
-                <img class="img-fluid"  src="../../../public/web-chat.PNG" alt="">
+                <img class="img-fluid"  src="../../assets/web-chat.PNG" alt="">
                 <h4>Real time chat App</h4>
                 <div class="description-box">
 
