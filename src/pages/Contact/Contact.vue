@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center">
-        <h1>Get In Touch</h1>
+        <h1 class="mt-4 mb-5">Get In Touch</h1>
         <p>Dorp me a message to say Hi or ask for my CV.
            Feel free to contact me, I'd love to hear from you!
         </p>
@@ -11,9 +11,10 @@
             <input type="email" id="user_email" name="user_email" placeholder="Email" required>
             <label for="message"></label>
             <textarea type="text" id="message" name="message" placeholder="Message" required />
-            <button>Send Email</button>
+                <button v-if="!formPosted" :disabled="formPosted">{{buttonText}}</button>
+                <button v-if="formPosted" @click="sendAnotherOne">Send Another one?</button>
         </form>
-        <PopUp v-if="formPosted" class="popup"/>
+        <PopUp v-if="modalOpen" class="popup"/>
     </div>
 </template>
 
@@ -24,8 +25,16 @@ import PopUp from '../../components/FormPostedPop.vue/PopUp.vue'
 
 const formData = ref()
 const formPosted =ref(false)
+const modalOpen = ref(false)
+const buttonText = ref('Send Email')
+
+const sendAnotherOne = () => {
+    formPosted.value = false
+    buttonText.value = 'Send Email'
+}
 
 const sendEmail = ():void => {
+    buttonText.value = 'Sending...'
     emailjs.sendForm(
         'service_fyfhgcq',
         'template_vugf4hc',
@@ -35,14 +44,16 @@ const sendEmail = ():void => {
     .then((res) => {
         if( res.status === 200 ) {
             formPosted.value = true;
+            modalOpen.value = true;
             formData.value.reset();
-            console.log(formData.value)
+            buttonText.value = 'SENT'
             setTimeout(() => {
-                formPosted.value = false;
+                modalOpen.value = false
             }, 4000)
         }
     }, (err) => {
         console.log(err)
+        buttonText.value = 'Send Email'
     })
 
 
@@ -51,6 +62,7 @@ const sendEmail = ():void => {
 </script>
 
 <style scoped>
+
 
 form {
     width: 50%;
@@ -71,13 +83,9 @@ input, textarea {
     border: 1px solid #F8CBE6;
 }
 
-h1 {
-    margin-bottom: 1.5rem;
-}
-
 p {
     font-size: 1.1rem;
-    /* color: brown; */
+    text-align: center;
 }
 textarea {
     height: 100px !important;

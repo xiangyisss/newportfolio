@@ -3,6 +3,7 @@ import HomeVue from './pages/Home/Home.vue';
 import AboutVue from './pages/About/About.vue';
 import ProjectsVue from './pages/Projects/Projects.vue';
 import ContactVue from './pages/Contact/Contact.vue';
+import FooterVue from './components/FooterComponents/Footer.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import ContactVue from './pages/Contact/Contact.vue';
 		<ProjectsVue id="projects"/>
 		<ContactVue id="contact"/>
 	</main>
+	<FooterVue />
 </template>
 
 <style>

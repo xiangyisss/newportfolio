@@ -1,6 +1,6 @@
 <template>
     <div class="container-sm min-vh-100 d-flex flex-column justify-content-center align-items-center ">
-        <h1 > <span>About</span> Me</h1>
+        <h1 class="mt-4 mb-5" > <span>About</span> Me</h1>
         <div class="wrapper d-flex justify-content-between align-items-center flex-wrap">
             <div class="img-wrapper">
                 <img src="../../../public/my-photo.png" alt="">
@@ -46,11 +46,6 @@ img {
 
 .info-wrapper {
     width: 60%;
-}
-
-h1 {
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
 }
 
 ul {

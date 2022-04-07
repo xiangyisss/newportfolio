@@ -5,7 +5,7 @@
 
             <div class="project">
                 <img class="img-fluid" src="../../../public/reading-tree.PNG" alt="">
-                <h3>Love reading</h3>
+                <h4>Love reading</h4>
                 <div class=" description-box">
 
                     <p>A CRUD full stack Project for share most memoriable books, recommendations,
@@ -18,7 +18,7 @@
 
             <div class="project">
                 <img class="img-fluid"  src="../../../public/recipes-site.PNG" alt="">
-                <h3>Today's Recipes</h3>
+                <h4>Today's Recipes</h4>
                 <div class="description-box">
 
                     <p>Project for those that run out of ideas when cooking.
@@ -32,7 +32,7 @@
 
             <div class="project">
                 <img class="img-fluid"  src="../../../public/web-chat.PNG" alt="">
-                <h3>Real time chat App</h3>
+                <h4>Real time chat App</h4>
                 <div class="description-box">
 
                     <p>Project to help people connect and share ideas. Drop by and
@@ -56,15 +56,11 @@
 	background-color: #eee6e6a6;
 }
 
-h1 {
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
-}
 
 a {
     color: #73c7f5;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     margin-bottom: 1.5rem;
     text-decoration: none;
 }
@@ -76,12 +72,12 @@ a {
     margin-bottom: 1.5rem;
 }
 .project > * {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .description-box {
-    min-height: 100px;
+    min-height: 80px;
 }
-h3 {
+h4 {
     font-weight: 500;
 }
 @media ( max-width: 1100px ) {
